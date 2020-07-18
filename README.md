@@ -17,7 +17,7 @@
 
 # Usage
 
-- git clone git@github.com:1Tech-X/tlogin.git
+- git clone https://github.com/1Tech-X/tlogin.git
 
 - cd tlogin
 
