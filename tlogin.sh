@@ -32,15 +32,16 @@ echo  "${green}_____________________${cyan}1.0v${green}_________________________
 echo  "${yellow}               Created by TECH-X "
 echo  "                  www.mrtechx.com  "
 echo  "${reset}"
-# Chechking Reqyuirents
+# Checking Requirents
 
-chechreq () {
+checkreq () {
 
 	for i in python espeak; do
 		  if [ -e ${PREFIX}/bin/$i ]; then
 		  	printf "${green} \n$i is Already installed\n ${reset}"
 		  else
 		  	printf "${blue} [*]Installing ${i}....${reset}"
+                        sleep 1
 		  	apt install -y $i || {
 		  		printf "${red}"
                                 echo ""
@@ -135,7 +136,7 @@ setlock () {
 
  locktype () {
         echo ""
- 	printf "${yellow}Chose lock type${reset}\n"
+ 	printf "${yellow}Choose lock type${reset}\n"
  	echo ""
  	printf ""
  	printf "${green}[1]${blue}-Simple Login${reset}\n"
@@ -162,7 +163,7 @@ setlock () {
    fi
  }
 
-chechreq
+checkreq
 create
 backup
 setlock
