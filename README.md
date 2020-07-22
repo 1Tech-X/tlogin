@@ -5,7 +5,7 @@
 - With the help of this tool you can lock the terminal, by putting seprate username and password. 
 
 # Features
-- Set voice assitant lock
+- Set voice guide lock
 
 - Set simple lock
 
